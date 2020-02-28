@@ -24,9 +24,9 @@
   </properties>
 
   <scm>
-    <connection>scm:git:https://gitlab.tjrs.gov.br/dsis/apoio/arqsis/AssinadorTJRS-JSF.git</connection>
-    <developerConnection>scm:git:https://gitlab.tjrs.gov.br/dsis/apoio/arqsis/AssinadorTJRS-JSF.git</developerConnection>
-    <url>https://gitlab.tjrs.gov.br/dsis/apoio/arqsis/AssinadorTJRS-JSF.git</url>
+    <connection>scm:git:https://github.com/ArthurIbias/RestWithSpringBootUdemy.git</connection>
+    <developerConnection>scm:git:https://github.com/ArthurIbias/RestWithSpringBootUdemy.git</developerConnection>
+    <url>https://github.com/ArthurIbias/RestWithSpringBootUdemy</url>
   </scm>
 
   <dependencies>
