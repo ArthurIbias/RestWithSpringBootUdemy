@@ -1,25 +1,24 @@
-package br.com.erudio.model;
+package br.com.erudio.data.vo;
 
 import java.io.Serializable;
 import java.util.Objects;
 
 /**
- * Person
+ * PersonVO
  */
-public class Person implements Serializable {
+public class PersonVO implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
     private Long id;
     private String firstName;
     private String lastName;
     private String address;
     private String gender;
 
-    public Person() {
+    public PersonVO() {
     }
 
-    public Person(Long id, String firstName, String lastName, String address, String gender) {
+    public PersonVO(Long id, String firstName, String lastName, String address, String gender) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -67,27 +66,27 @@ public class Person implements Serializable {
         this.gender = gender;
     }
 
-    public Person id(Long id) {
+    public PersonVO id(Long id) {
         this.id = id;
         return this;
     }
 
-    public Person firstName(String firstName) {
+    public PersonVO firstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
 
-    public Person lastName(String lastName) {
+    public PersonVO lastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
 
-    public Person address(String address) {
+    public PersonVO address(String address) {
         this.address = address;
         return this;
     }
 
-    public Person gender(String gender) {
+    public PersonVO gender(String gender) {
         this.gender = gender;
         return this;
     }
@@ -96,13 +95,13 @@ public class Person implements Serializable {
     public boolean equals(Object o) {
         if (o == this)
             return true;
-        if (!(o instanceof Person)) {
+        if (!(o instanceof PersonVO)) {
             return false;
         }
-        Person person = (Person) o;
-        return Objects.equals(id, person.id) && Objects.equals(firstName, person.firstName)
-                && Objects.equals(lastName, person.lastName) && Objects.equals(address, person.address)
-                && Objects.equals(gender, person.gender);
+        PersonVO personVO = (PersonVO) o;
+        return Objects.equals(id, personVO.id) && Objects.equals(firstName, personVO.firstName)
+                && Objects.equals(lastName, personVO.lastName) && Objects.equals(address, personVO.address)
+                && Objects.equals(gender, personVO.gender);
     }
 
     @Override
